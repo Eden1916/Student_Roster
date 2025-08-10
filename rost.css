@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+}
+.Pass {
+    background-color: green;
+    color: white;
+}
+.Fail {
+    background-color: red;
+    color: white;
+}
+h2{
+    background-color:blueviolet;
+    text-align:center;
+}
+div{
+    border:2px dotted;
+}
+button{
+    color:hwb(98 53% 5%);
+    background-color: brown;
+}
