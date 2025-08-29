@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Roster</title>
-    <link rel="stylesheet" href="rost.css">
+    <link rel="stylesheet" href="roster.css">
 </head>
 <body>
 <?php
