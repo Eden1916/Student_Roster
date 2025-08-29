@@ -49,7 +49,7 @@ if ($conn->query($TB) === TRUE) {
     echo "Error creating table: " . $conn->error . "<br>";
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['fullname'];
     $stud_id = $_POST['stud_id'];
     $gender = $_POST['gender'];
@@ -59,11 +59,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $bio = $_POST['marks']['bio'];
     $phy = $_POST['marks']['phy'];
     $chem = $_POST['marks']['chem'];
+    if ($maths > 100 || $eng > 100 || $bio > 100 || $phy > 100 || $chem > 100){
+        echo 'Each marks must be in the range of 0 - 100!';
+        exit;
+    }else if ($maths < 0 || $eng < 0 || $bio < 0 || $phy < 0 || $chem < 0){
+        echo 'Each marks must be in the range of 0 - 100!';
+        exit;
+    }
 
     $total = $maths + $eng + $bio + $phy + $chem;
     $average = $total / 5;
 
-    if ($average >= 85) {
+    if ($average > 100){
+        echo 'You have entered in valid mark. The average should be in th range of 0 to 100!';
+        exit;
+    } else if ($average >= 85) {
         $rank = 'A';
     } elseif ($average >= 75) {
         $rank = 'B';
