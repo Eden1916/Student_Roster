@@ -60,10 +60,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phy = $_POST['marks']['phy'];
     $chem = $_POST['marks']['chem'];
     if ($maths > 100 || $eng > 100 || $bio > 100 || $phy > 100 || $chem > 100){
-        echo 'Each marks must be in the range of 0 - 100!';
+        echo '<h1 class = "error">Each marks must be in the range of 0 - 100!</h1>';
         exit;
     }else if ($maths < 0 || $eng < 0 || $bio < 0 || $phy < 0 || $chem < 0){
-        echo 'Each marks must be in the range of 0 - 100!';
+        echo '<h1 class = "error">Each marks must be in the range of 0 - 100!</h1>';
         exit;
     }
 
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $average = $total / 5;
 
     if ($average > 100){
-        echo 'You have entered in valid mark. The average should be in th range of 0 to 100!';
+        echo '<h1 class = "error">You have entered in valid mark. The average should be in th range of 0 to 100!</h1>';
         exit;
     } else if ($average >= 85) {
         $rank = 'A';

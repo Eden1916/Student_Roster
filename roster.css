@@ -30,3 +30,6 @@ button{
     color:hwb(98 53% 5%);
     background-color: brown;
 }
+.error{
+    color:rgb(0, 255, 55);
+}
