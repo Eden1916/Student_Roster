@@ -1,28 +1,31 @@
-Student Grade Submission Portal
+📘 Student Grade Submission Portal
 
 A simple web-based system for submitting student details and subject marks.
-The project uses HTML, CSS, JavaScript (Fetch API), and PHP to store and display student records.
+Built with HTML, CSS, JavaScript (Fetch API), and PHP.
 
 🚀 Features
 
 Submit student information (name, ID, gender, age).
 
-Enter marks for five subjects.
+Enter marks for five subjects (Maths, English, Biology, Physics, Chemistry).
 
-Data is processed by PHP (roster.php).
+Data validation with success (green) and error (red) alerts.
 
-Success and error alerts using JavaScript.
+View all submitted student records in a table.
 
-Option to view all submitted students.
-
-Clean user interface.
+Clean and user-friendly interface.
 
 📁 Project Structure
-├── index.html         # Main form UI  
-├── roster.css         # Page stylesheet  
-├── roster.js          # Form submission + alerts  
-├── roster.php         # Backend logic (saving/viewing records)  
-└── README.md          # Documentation  
+
+├── index.html             # Main form interface
+
+├── roster.css             # Page styling
+
+├── roster.js              # JavaScript for form submission and alerts
+
+├── roster.php             # Backend PHP logic for saving/viewing records
+
+└── README.md              # Project documentation
 
 🛠️ Technologies Used
 
@@ -34,86 +37,53 @@ JavaScript (Fetch API)
 
 PHP
 
-JSON / Tables (Optional for display)
+📥 Setup Instructions
+Requirements
 
-📥 How It Works
+Local server with PHP (e.g., XAMPP, WAMP, MAMP)
 
-1️⃣ Fill Out the Form
+Web browser
 
-Users can enter full name, ID, gender, age, and marks for each subject.
+Steps
 
-2️⃣ Submit Data
-
-JavaScript sends the form using:
-
-fetch("roster.php", { method: "POST", body: formData })
-
-3️⃣ PHP Processes Input
-
-Validates inputs
-
-Saves data (database or file, depending on setup)
-
-Returns success or error text
-
-
-Alerts Displayed
-
-Green alert = success
-
-Red alert = error
-
-🖥️ Setup Instructions
-
-✔️ Requirements
-
-PHP installed (XAMPP, WAMP, or local server)
-
-Browser
-
-Folder placed inside htdocs (for XAMPP)
-
-✔️ Steps
-
-Download or clone the repository:
+Clone or download the repository:
 
 git clone https://github.com/yourusername/student-grade-submission.git
 
 
-Move the folder into:
+Place the folder inside your local server directory (e.g., C:\xampp\htdocs\).
 
-C:\xampp\htdocs\
+Start your local server (Apache).
 
+Open your browser and go to:
 
-Start Apache server (from XAMPP).
+http://localhost/student-grade-submission/index.html
 
-Open the project in the browser:
+📄 How It Works
 
-http://localhost/student-grade-submission/
+Fill Out the Form – Enter student information and marks.
 
-📄 Viewing Student Roster
+Submit Data – The form is sent via JavaScript (fetch) to roster.php.
 
-Inside the portal, click:
+PHP Processes Input – Data is validated and saved to the database.
 
-"View Student Roster"
-This loads data stored by the PHP backend.
+Alerts Displayed –
 
-🧩 Customization
+Green box = successful submission
 
-You can extend this project by adding:
+Red box = invalid input or error
 
-Database (MySQL) instead of file storage
+View Roster – Click “View Student Roster” to see all stored records.
 
-GPA calculation
+🧩 Customization Ideas
 
-Edit/delete student data
+Connect to a MySQL database instead of storing in a file.
 
-Authentication system
+Add edit/delete functionality for students.
 
-🤝 Contributions
+Include GPA calculation or grade analytics.
 
-Pull requests are welcome!
-For major changes, please open an issue to discuss ideas first.
+Implement authentication for multiple users.
 
 📜 License
 
