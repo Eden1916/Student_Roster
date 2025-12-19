@@ -77,6 +77,7 @@ $result = $conn->query("SELECT * FROM stud_roster");
     <meta charset="UTF-8">
     <title>Student Roster</title>
     <link rel="stylesheet" href="roster.css">
+    <link rel="icon" type="image/png" href="webTab.png">
 </head>
 <body>
 
